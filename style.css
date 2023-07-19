@@ -26,6 +26,7 @@ header {
     margin: 0;
     width: 100%;
     position: fixed;
+    z-index: 1000;
     top: 0;
     box-shadow: 0 4px 10px rgba(0, 0, 0, .1);
 }
@@ -96,5 +97,47 @@ nav ul li a:hover {
 
 .main-container{
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr; 
+    justify-content: space-between;
+    row-gap: 4rem;
+    margin-top: 200px;
 }
+
+.main-img {
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    width: 100%; 
+    padding: 2rem; 
+    box-sizing: border-box; 
+    min-width: 650px;
+}
+
+.main-box{
+    display: block;
+    line-height: normal;
+    padding-top: 2rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    min-width: 425px;
+}
+
+.main-box h1 {
+    padding: 0;
+}
+
+.main-img img {
+    max-width: 100%;  
+    height: auto; 
+}
+.hamburger-button{
+    display: none; 
+    cursor: pointer;
+}
+
+
+
+@media screen and (max-width: 736px) {
+    
+}
+    
