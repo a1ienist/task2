@@ -1,5 +1,5 @@
 * {
-    font-family: 'Inter', sans-serif;
+    font-family: 'DM Sans', sans-serif;
 }
 
 body {
@@ -13,7 +13,7 @@ body {
     line-height: 24px;
 }
 
-.main-container {
+.header-container {
     position: relative;
 }
 
@@ -27,15 +27,7 @@ header {
     width: 100%;
     position: fixed;
     top: 0;
-}
-
-header:not(:hover) {
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0);
-    transition: box-shadow 0.3s ease;
-}
-
-header:hover {
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, .1);
 }
 
 header nav {
@@ -43,7 +35,6 @@ header nav {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-
 }
 
 header nav div img {
@@ -60,10 +51,8 @@ header nav div img {
     text-decoration: none;
 }
 
-
 .logo {
     height: 1.5rem;
-
 }
 
 nav ul {
@@ -74,26 +63,23 @@ nav ul {
 nav ul li {
     display: inline;
     margin: 1rem;
-
-
 }
 
 nav ul li a {
     text-decoration: none;
-    
-
+    color: #2f1c6a;
+    transition: color 0.3s ease-in-out;
 }
-nav ul li a:hover{
-    color: #000000;
+
+nav ul li a:hover {
+    color: black;
 }
 
 .button {
     margin: 0;
     align-items: center;
-
     border: 2px solid #2F1C6A;
     border-radius: 4px;
-
     cursor: pointer;
     display: inline-block;
     justify-content: center;
@@ -101,9 +87,14 @@ nav ul li a:hover{
     position: relative;
     text-align: center;
     transition: .3s ease-in-out;
-
-
 }
-@media only screen and {min width: ;
-    
+
+.button:hover {
+    border: 2px solid black;
+    color: black;
+}
+
+.main-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
