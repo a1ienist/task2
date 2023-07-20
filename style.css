@@ -133,39 +133,46 @@ nav ul li a:hover {
 }
 
 .networth {
-    display: block;
-    padding: 0 ;
+    display: flex;
+    justify-content: left;
+    padding: 0;
 
 }
 
 .networth img {
-
-   text-align: center;
+    display: block;
+    text-align: center;
 }
 
 .timer {
-    display: block;
-    text-align: center;
-    padding: 0 5rem;
+    display: flex;
+    justify-content: left;
+
 }
+
+.timer img {
+    display: block;
+    justify-content: left;
+
+}
+
+.button-container {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+
 
 .button-plan {
     display: block;
-    align-items: center;
     background-color: #673de6;
     border: none;
     border-radius: 4px;
     color: #fff;
     cursor: pointer;
-    display: flex;
-    justify-content: center;
-    min-height: 48px;
-    padding: 0 3rem;
-    position: absolute;
-    left: 270px;
+    padding: 1rem 7rem;
     text-align: center;
     transition: .3s ease-in-out;
-    width: 250px;
 }
 
 
@@ -178,22 +185,41 @@ nav ul li a:hover {
     display: flex;
     justify-content: space-between;
     text-align: center;
+    padding:2rem 4rem;
 }
 
 .rate-box {
-    display: inline-block;
+    display: inline-flex;
+    flex-direction: column;
+    flex-wrap: wrap;
     justify-content: center;
     text-align: center;
+    color: black;
+    min-width: 250px;
+    padding:2rem 4rem;
 }
-.google{
+
+.rate-element {
+    margin: 0;
+    padding: 0;
+    display: block;
+    font-size: 16px;
     text-align: left;
 }
-.google img{
+
+.google {
+
+    text-align: left;
+}
+
+.google img {
     height: 1.5rem;
 }
-.google span{
-   font-size: 20px; 
+.h2-box{
+    display: block;
+    justify-content: center;
 }
+
 
 @media screen and (max-width: 1025px) {
     .all-content {
@@ -232,8 +258,8 @@ nav ul li a:hover {
 
     .main-box,
     .main-img {
-        padding-left: 2rem;
-        padding-right: 2rem;
+        padding-left: 5rem;
+        padding-right: 5rem;
     }
 
     header img {
@@ -246,11 +272,49 @@ nav ul li a:hover {
     header nav {
         display: none;
     }
-
-    .button-plan {
-
-        position: absolute;
-        left: 270px;
-
-
+    .rate {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        padding:2rem 4rem;
     }
+    .rate-element {
+        margin: 0;
+        padding: 0 8rem;
+        display: block;
+        font-size: 16px;
+        text-align: left;
+    }
+    
+    .google {
+    
+        text-align: left;
+    }
+    .networth {
+
+        justify-content: center;
+
+    
+    }
+    
+
+    .timer {
+
+        justify-content: center;
+    
+    }
+    
+    .timer img {
+
+        justify-content: center;
+    
+    }
+    
+    .button-container {
+
+        align-items: center;
+        justify-content: center;
+    }
+    
+}
