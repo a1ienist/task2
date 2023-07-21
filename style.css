@@ -134,16 +134,24 @@ nav ul li a:hover {
 }
 
 .networth {
-    display: flex;
+    display: block;
+    text-align: left;
     justify-content: left;
     padding: 0;
+    margin-top: 1rem;
 
 }
 
-.networth img {
-    display: block;
-    text-align: center;
+.networth span {
+    font-size: 40px;
+
 }
+
+.bonus {
+    color: #673de6;
+    font-size: 18px;
+}
+
 
 .timer {
     display: flex;
@@ -527,12 +535,14 @@ nav ul li a:hover {
     .plan-left-border {
         display: none;
     }
+
     .choise-container {
 
         grid-template-columns: 1fr;
         grid-template-rows: 1fr;
 
     }
+
     .gallery-container {
         margin-left: auto;
         margin-right: auto;
@@ -540,13 +550,26 @@ nav ul li a:hover {
         grid-template-rows: 1fr;
 
     }
+
     .gallery-box {
         margin-left: auto;
         margin-right: auto;
-    
+
     }
-    .pic-3{
+
+    .pic-3 {
         display: none;
     }
 
+    .networth {
+        text-align: center;
+        justify-content: center;
+
+
+    }
+
+    .bonus {
+        text-align: center;
+        justify-content: center;
+    }
 }
